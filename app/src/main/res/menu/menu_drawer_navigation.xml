@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+
+    <group android:checkableBehavior="none">
+        <item
+            android:id="@+id/nav_message"
+            android:icon="@drawable/ic_blog"
+            android:title="@string/lbl_blog" />
+        <item
+            android:id="@+id/nav_account"
+            android:icon="@drawable/ic_baseline_person_outline"
+            android:title="@string/lbl_account" />
+        <item
+            android:id="@+id/nav_profile"
+            android:icon="@drawable/ic_settings"
+            android:title="@string/lbl_settings" />
+    </group>
+    <item android:title="">
+        <menu>
+
+            <item
+                android:id="@+id/nav_admin"
+                android:title="@string/admin_interface"
+                android:visible="false"
+                android:icon="@drawable/ic_admin_panel" />
+
+            <item
+                android:id="@+id/nav_view_all_products"
+                android:icon="@drawable/ic_apps"
+                android:title="@string/view_all_products" />
+
+            <item
+                android:id="@+id/nav_chat"
+                android:icon="@drawable/ic_chat"
+                android:title="@string/chat_support" />
+
+            <item
+                android:id="@+id/nav_share"
+                android:icon="@drawable/ic_share"
+                android:title="@string/lbl_share_app" />
+
+        </menu>
+    </item>
+
+</menu>

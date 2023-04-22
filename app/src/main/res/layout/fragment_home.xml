@@ -1,0 +1,442 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.swiperefreshlayout.widget.SwipeRefreshLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/swipe"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    tools:ignore="RtlSymmetry">
+
+
+    <ScrollView
+        android:id="@+id/scrollView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/background_color"
+        android:overScrollMode="never"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <!--Slider Images-->
+
+            <com.denzcoskun.imageslider.ImageSlider
+                android:id="@+id/image_slider"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_200sdp"
+                app:iss_auto_cycle="true"
+                app:iss_delay="0"
+                app:iss_period="1000" />
+
+            <!-- RecyclerView (List Items) For Categories -->
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/categoriesRv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:layout_marginBottom="@dimen/_16sdp"
+                android:clipToPadding="false"
+                android:overScrollMode="never"
+                android:paddingEnd="@dimen/_16sdp"
+                android:visibility="gone"
+                tools:visibility="visible" />
+
+            <!-- Label-ViewMore For FeaturedProducts-->
+
+            <RelativeLayout
+                android:id="@+id/rvFeaturedProducts"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_16sdp"
+                android:layout_marginEnd="@dimen/_16sdp"
+                android:layout_marginBottom="@dimen/spacing_standard"
+                android:visibility="gone"
+                tools:visibility="visible">
+
+                <TextView
+                    android:id="@+id/featuredProductsTv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:maxLength="25"
+                    android:maxLines="1"
+                    android:singleLine="true"
+                    android:text="@string/featured_products"
+                    android:textAppearance="@style/TextAppearance.Subhead.Bold"
+                    android:textColor="@color/grey_80" />
+
+                <TextView
+                    android:id="@+id/featuredMore"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginEnd="@dimen/spacing_standard_new"
+                    android:paddingStart="@dimen/spacing_control"
+                    android:paddingTop="@dimen/spacing_control"
+                    android:paddingBottom="@dimen/spacing_control"
+                    android:text="@string/view_more"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Small"
+                    android:textColor="#E55C4F"
+                    android:textStyle="bold" />
+
+            </RelativeLayout>
+
+            <!-- RecyclerView (List Products) For FeaturedProducts -->
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/featuredProducts"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/spacing_standard"
+                android:clipToPadding="false"
+                android:overScrollMode="never"
+                android:paddingStart="@dimen/spacing_standard"
+                android:paddingEnd="@dimen/spacing_standard"
+                android:visibility="gone"
+                tools:visibility="visible" />
+
+            <!-- Label-ViewMore For NewestProducts-->
+
+            <RelativeLayout
+                android:id="@+id/rvNewestProducts"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_16sdp"
+                android:layout_marginEnd="@dimen/_16sdp"
+                android:layout_marginBottom="@dimen/spacing_standard"
+                android:visibility="gone"
+                tools:visibility="visible">
+
+                <TextView
+                    android:id="@+id/newestProductsTv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:maxLength="25"
+                    android:maxLines="1"
+                    android:singleLine="true"
+                    android:text="@string/newest_products"
+                    android:textAppearance="@style/TextAppearance.Subhead.Bold"
+                    android:textColor="@color/grey_80" />
+
+                <TextView
+                    android:id="@+id/newestMore"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginEnd="@dimen/spacing_standard_new"
+                    android:paddingStart="@dimen/spacing_control"
+                    android:paddingTop="@dimen/spacing_control"
+                    android:paddingBottom="@dimen/spacing_control"
+                    android:text="@string/view_more"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Small"
+                    android:textColor="#E55C4F"
+                    android:textStyle="bold" />
+
+            </RelativeLayout>
+
+            <!-- RecyclerView (List Products) For NewestProducts -->
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/newestProducts"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/spacing_standard"
+                android:clipToPadding="false"
+                android:overScrollMode="never"
+                android:paddingStart="@dimen/spacing_standard"
+                android:paddingEnd="@dimen/spacing_standard"
+                android:visibility="gone"
+                tools:visibility="visible" />
+
+            <!-- Label-ViewMore For NewestProducts-->
+
+            <RelativeLayout
+                android:id="@+id/onSaleProductsLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/spacing_standard_new"
+                android:layout_marginTop="@dimen/spacing_standard_new"
+                android:layout_marginEnd="@dimen/spacing_standard_new"
+                android:visibility="gone"
+                tools:visibility="visible">
+
+                <TextView
+                    android:id="@+id/onSaleProductsTv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:maxLength="25"
+                    android:maxLines="1"
+                    android:singleLine="true"
+                    android:text="@string/on_sale_products"
+                    android:textAppearance="@style/TextAppearance.Subhead.Bold"
+                    android:textColor="@color/grey_80" />
+
+                <TextView
+                    android:id="@+id/onSaleMore"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginEnd="@dimen/spacing_standard_new"
+                    android:paddingStart="@dimen/spacing_control"
+                    android:paddingTop="@dimen/spacing_control"
+                    android:paddingBottom="@dimen/spacing_control"
+                    android:text="@string/view_more"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Small"
+                    android:textColor="#E55C4F"
+                    android:textStyle="bold" />
+            </RelativeLayout>
+
+            <!-- RecyclerView (List Products) For OnSaleProduct -->
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/onSaleProduct"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/spacing_standard"
+                android:clipToPadding="false"
+                android:overScrollMode="never"
+                android:paddingStart="@dimen/spacing_standard"
+                android:paddingEnd="@dimen/spacing_standard"
+                android:visibility="gone"
+                tools:visibility="visible" />
+
+            <!-- Label-ViewMore For NewestProducts-->
+
+            <RelativeLayout
+                android:id="@+id/rlRecentProduct"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/spacing_standard_new"
+                android:layout_marginTop="@dimen/spacing_standard_new"
+                android:layout_marginEnd="@dimen/spacing_standard_new"
+                android:visibility="gone"
+                tools:visibility="visible">
+
+
+                <TextView
+                    android:id="@+id/recentProductsTv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:maxLength="25"
+                    android:maxLines="1"
+                    android:singleLine="true"
+                    android:text="@string/recent_products"
+                    android:textAppearance="@style/TextAppearance.Subhead.Bold"
+                    android:textColor="@color/grey_80" />
+
+                <TextView
+                    android:id="@+id/recentMore"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginEnd="@dimen/spacing_standard_new"
+                    android:paddingStart="@dimen/spacing_control"
+                    android:paddingTop="@dimen/spacing_control"
+                    android:paddingBottom="@dimen/spacing_control"
+                    android:text="@string/view_more"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Small"
+                    android:textColor="#E55C4F"
+                    android:textStyle="bold"
+                    android:visibility="gone" />
+            </RelativeLayout>
+
+            <!-- RecyclerView (List Products) For NewestProducts -->
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/recentProducts"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/spacing_standard"
+                android:clipToPadding="false"
+                android:overScrollMode="never"
+                android:paddingStart="@dimen/spacing_standard"
+                android:paddingEnd="@dimen/spacing_standard"
+                android:visibility="gone"
+                tools:visibility="visible" />
+
+            <!-- Label For Banner 1-->
+
+            <RelativeLayout
+                android:id="@+id/today_deal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/spacing_standard_new"
+                android:layout_marginTop="@dimen/spacing_standard_new"
+                android:layout_marginEnd="@dimen/spacing_standard_new"
+                android:visibility="gone"
+                tools:visibility="visible">
+
+
+                <TextView
+                    android:id="@+id/todayDealTv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:text="@string/today_deal"
+                    android:textAppearance="@style/TextAppearance.Subhead.Bold"
+                    android:textColor="@color/grey_80" />
+
+
+            </RelativeLayout>
+
+            <!-- Banner Image 1 -->
+
+            <LinearLayout
+                android:id="@+id/banner_1_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/spacing_standard_new"
+                android:layout_marginTop="@dimen/spacing_standard_new"
+                android:layout_marginEnd="@dimen/spacing_standard_new"
+                android:visibility="gone"
+                tools:visibility="visible">
+
+                <ImageView
+                    android:id="@+id/banner1Iv"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_180sdp"
+                    android:scaleType="fitXY" />
+
+            </LinearLayout>
+
+            <!-- Label-ViewMore For PopularProducts-->
+
+            <RelativeLayout
+                android:id="@+id/rlPopularProducts"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/spacing_standard_new"
+                android:layout_marginTop="@dimen/spacing_standard_new"
+                android:layout_marginEnd="@dimen/spacing_standard_new"
+                android:visibility="gone"
+                tools:visibility="visible">
+
+
+                <TextView
+                    android:id="@+id/popularProductsTv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:maxLength="25"
+                    android:maxLines="1"
+                    android:singleLine="true"
+                    android:text="@string/popular_products"
+                    android:textAppearance="@style/TextAppearance.Subhead.Bold"
+                    android:textColor="@color/grey_80" />
+
+                <TextView
+                    android:id="@+id/popularMore"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginEnd="@dimen/spacing_standard_new"
+                    android:paddingStart="@dimen/spacing_control"
+                    android:paddingTop="@dimen/spacing_control"
+                    android:paddingBottom="@dimen/spacing_control"
+                    android:text="@string/view_more"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Small"
+                    android:textColor="#E55C4F"
+                    android:textStyle="bold" />
+            </RelativeLayout>
+
+            <!-- RecyclerView (List Products) For PopularProducts -->
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/popularProducts"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/spacing_standard"
+                android:clipToPadding="false"
+                android:overScrollMode="never"
+                android:paddingStart="@dimen/spacing_standard"
+                android:paddingEnd="@dimen/spacing_standard"
+                android:visibility="gone"
+                tools:visibility="visible" />
+
+            <!-- Banner Image 2 -->
+
+            <LinearLayout
+                android:id="@+id/banner_2_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/spacing_standard_new"
+                android:layout_marginTop="@dimen/spacing_standard_new"
+                android:layout_marginEnd="@dimen/spacing_standard_new"
+                android:visibility="gone"
+                tools:visibility="visible">
+
+                <ImageView
+                    android:id="@+id/banner2Iv"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_180sdp"
+                    android:scaleType="fitXY" />
+
+            </LinearLayout>
+
+
+            <!-- Label-ViewMore For In Stock Products -->
+            <RelativeLayout
+                android:id="@+id/rlInStockProduct"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/spacing_standard_new"
+                android:layout_marginTop="@dimen/spacing_standard_new"
+                android:layout_marginEnd="@dimen/spacing_standard_new"
+                android:visibility="gone"
+                tools:visibility="visible">
+
+
+                <TextView
+                    android:id="@+id/inStockProductsTv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:maxLength="25"
+                    android:maxLines="1"
+                    android:singleLine="true"
+                    android:text="@string/in_stock_products"
+                    android:textAppearance="@style/TextAppearance.Subhead.Bold"
+                    android:textColor="@color/grey_80" />
+
+                <TextView
+                    android:id="@+id/inStockMore"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginEnd="@dimen/spacing_standard_new"
+                    android:paddingStart="@dimen/spacing_control"
+                    android:paddingTop="@dimen/spacing_control"
+                    android:paddingBottom="@dimen/spacing_control"
+                    android:text="@string/view_more"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Small"
+                    android:textColor="#E55C4F"
+                    android:textStyle="bold" />
+            </RelativeLayout>
+
+            <!-- RecyclerView (List Products) For In Stock Products -->
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/inStockProducts"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/spacing_standard"
+                android:layout_marginBottom="@dimen/_50sdp"
+                android:clipToPadding="false"
+                android:overScrollMode="never"
+                android:paddingStart="@dimen/spacing_standard"
+                android:paddingEnd="@dimen/spacing_standard"
+                android:visibility="gone"
+                tools:visibility="visible" />
+
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</androidx.swiperefreshlayout.widget.SwipeRefreshLayout>

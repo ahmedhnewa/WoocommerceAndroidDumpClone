@@ -1,0 +1,156 @@
+<resources>
+    <string name="app_name">شركة الريادة</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+
+    <string name="small_text">Small</string>
+    <string name="default_text">Normal</string>
+    <string name="large_text">Large</string>
+
+    <string name="default_notification_channel_id">Default</string>
+    <string name="bottom_nav_home">القائمة الرئيسية</string>
+    <string name="bottom_nav_categories">التصنيفات</string>
+    <string name="bottom_nav_cart">السلة</string>
+    <string name="bottom_nav_account">الحساب</string>
+    <string name="text_guest_user">غير معرف</string>
+    <string name="lbl_my_order">الطلبات</string>
+    <string name="lbl_blog">المقالات</string>
+    <string name="lbl_account">الحساب</string>
+    <string name="lbl_settings">الاعدادات</string>
+    <string name="lbl_logout">تسجيل الخروج</string>
+    <string name="lbl_contact_us">اتصل بنا</string>
+    <string name="lbl_about">حول</string>
+    <string name="lbl_share_app">مشاركة التطبيق</string>
+    <string name="lbl_help">تعليمات</string>
+    <string name="lbl_wish_list">قائمة الرغبات</string>
+
+    <string name="lorem_ipsum" translatable="false">
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam efficitur ipsum in placerat molestie.  Fusce quis mauris a enim sollicitudin
+        \n\nLorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam efficitur ipsum in placerat molestie.  Fusce quis mauris a enim sollicitudin
+    </string>
+
+    <string name="strike_price"> <strike>$1459</strike></string>
+
+    <string name="about_text">شركة متخصصة بالأجهزة المختبرية والمستلزمات الطبية والعلمية المحدودة</string>
+    <string name="load_more">تحميل المزيد</string>
+    <string name="sign_up"> انشاء حساب جديد </string>
+    <string name="hint_first_name">الاسم الاول</string>
+    <string name="hint_last_name">الاسم الثاني</string>
+    <string name="email">البريد الالكتروني</string>
+    <string name="password">كلمة المرور</string>
+    <string name="old_password">كلمة المرور القديمة</string>
+    <string name="new_password">كلمة المرور الجديدة</string>
+    <string name="confirm_password">تاكيد كلمة المرور</string>
+    <string name="create_an_account">انشاء حساب</string>
+    <string name="or_sign_in_with_social_networks">او سجل باستخدام مواقع التواصل الاجتماعي</string>
+    <string name="i_have_an_account">لدي حساب بالفعل</string>
+    <string name="lbl_loading">جاري التحميل</string>
+    <string name="featured_products">المنتجات المميزة</string>
+    <string name="view_more">اظهار المزيد</string>
+    <string name="on_sale_products">الاكثر مبيعا</string>
+    <string name="log_out">تسجيل الخروج</string>
+    <string name="settings">الاعدادات</string>
+    <string name="wishlist">قائمة الرغبات</string>
+    <string name="address">العنوان</string>
+    <string name="full_name">الاسم الكامل</string>
+    <string name="description">الوصف</string>
+    <string name="in_stock">الكمية متوفرة</string>
+    <string name="add_to_cart">اضافة الى السلة</string>
+    <string name="share">مشاركة</string>
+    <string name="try_again">المحاولة مجددا</string>
+    <string name="lbl_no_data_found">لايوجد بيانات</string>
+    <string name="forgot_password">نسيت كلمة المرور ؟</string>
+    <string name="sign_in">تسجيل الدخول</string>
+    <string name="welcome_back">مرحبا بك مجددا</string>
+    <string name="hello_there_sign_in_to_contine">ادخل المعلومات التالية للمتابعة</string>
+    <string name="don_t_have_an_account"> ليس لديك حساب ؟  </string>
+    <string name="username_or_email">اسم المستخدم او البريد الالكتروني</string>
+    <string name="last_products_viewed">اخر ماتم عرضه</string>
+
+    <string name="error_401">فشلت عملية الاتصال , الرجاء تحديث التطبيق</string>
+    <string name="error_404">لم يتم العثور على نقطة الاتصال بالخادم , الرجاء تحديث التطبيق</string>
+    <string name="error_500">هناك خطأ بالخادم</string>
+    <string name="no_internet">لايوجد اتصال بالانترنيت</string>
+    <string name="connect">اتصال</string>
+    <string name="google_plus_url" />
+    <string name="twitter_url" />
+    <string name="twitter_user_id" />
+    <string name="facebook_url" />
+    <string name="youtube_url" />
+    <string name="share_text">مشاركة</string>
+    <!--this is the tow strings need some white space-->
+    <string name="i_don_t_recieve_code"> لم استلم الكود بعد </string>
+    <string name="resend_code"> اعادة ارساله  </string>
+    <string name="reset_password">اعادة تعيين كلمة المرور</string>
+    <string name="next">التالي</string>
+    <string name="lbl_remove">حذف</string>
+    <string name="refresh_cart">تحديث السلة</string>
+
+    <string name="view_all_products">جميع المنتجات</string>
+    <string name="recent_products">اخر المعروضة</string>
+    <string name="today_deal">عرض اليوم</string>
+    <string name="popular_products">الأكثر شهرة</string>
+    <string name="in_stock_products">الموجودة في المخزن</string>
+    <string name="newest_products">الاحدث</string>
+    <string name="clear_cart">تفريغ السلة</string>
+    <string name="total_items">مجموع العناصر</string>
+    <string name="cash_on_delivery">الدفع عند الاستلام</string>
+    <string name="credit_debit_card">بطاقة ائتمانية</string>
+    <string name="edit">تعديل</string>
+    <string name="ship_to">الشحن الى</string>
+    <string name="payment_type">طريقة الدفع</string>
+    <string name="conform_your_details_above">تأكد من المعلومات المدخلة</string>
+    <string name="total_price">السعر الاجمالي</string>
+    <string name="conform_and_place_order">التقدم لاتمام الطلب</string>
+    <string name="address_line_1">العنوان السطر الاول</string>
+    <string name="address_line_2">العنوان السطر الثاني</string>
+    <string name="city">المدينة</string>
+    <string name="state">الولاية</string>
+    <string name="zip_code">الرمز البريدي</string>
+    <string name="country">الدولة</string>
+    <string name="current_country">IQ</string>
+    <string name="phone_number">رقم الهاتف</string>
+    <string name="delivery">التوصيل</string>
+    <string name="company_name_optional">اسم الشركة (Optional)</string>
+    <string name="use_as_billing_address">استخدام هذة العنوان كعنوان فوترة</string>
+    <string name="note">ملاحظات الطلب</string>
+    <string name="order_note_optional">ملاحظات الطلب (اختياري)</string>
+    <string name="express_delivery">توصيل سريع</string>
+    <string name="_1_day_delivery">يوصل في يوم واحد</string>
+    <string name="normal_delivery">توصيل اعتيادي</string>
+    <string name="up_to_5_business_days">تصل الى خمسة ايام عمل</string>
+    <string name="cart">السلة</string>
+    <string name="search">البحث</string>
+    <string name="under_development">تحت التطوير</string>
+    <string name="type_msg">اكتب رسالتك…</string>
+    <string name="chat_support">تواصل معنا</string>
+    <string name="admin_interface">واجهة الادمن</string>
+    <string name="users">المستخدمين</string>
+    <string name="sliders">الصور</string>
+    <string name="offers">العروض</string>
+    <string name="chat_list">اخر المحادثات</string>
+    <string name="shipped">مشحون</string>
+    <string name="order_cancelled">ملغي</string>
+    <string name="order_completed">مكتمل</string>
+    <string name="order_failed">فشل</string>
+    <string name="order_refunded">مسترد</string>
+    <string name="order_on_hold">بالانتظار</string>
+    <string name="order_processing">قيد التنفيذ</string>
+    <string name="order_pending">بانتظارالدفع</string>
+    <string name="no_more_products">لايوجد المزيد من المنتجات</string>
+    <string name="site_under_maintenance">حالياً الموقع غير متوفّر لغرض الصيانة. يرجى المحاولة مجدداً بعد دقيقة</string>
+    <string name="change_password">تغير كلمة المرور</string>
+    <string name="unknown_error">عذرا هناك خطأ غير معروف</string>
+    <string name="order_placed">تم الطلب</string>
+    <string name="received_your_order">استلمنا طلبك</string>
+    <string name="awaiting_confirmation">بانتظار المراجعة</string>
+    <string name="order_in_review">جاري مراجعة طلبك</string>
+    <string name="we_are_prepare_your_order">نعمل على تجهيز طلبك</string>
+    <string name="order_done">تم تسليم الطلب بنجاح</string>
+    <string name="pay">ادفع</string>
+    <string name="delivery_address">عنوان الطلب</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+</resources>

@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.swiperefreshlayout.widget.SwipeRefreshLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/swipe"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.fragment.CartFragment">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:id="@+id/cart_header_actions"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/spacing_middle"
+                android:visibility="gone"
+                tools:visibility="visible">
+
+                <TextView
+                    android:id="@+id/totalItemTv"
+                    style="@style/Heading"
+                    android:layout_centerVertical="true"
+                    android:layout_marginEnd="56dp"
+                    android:layout_toStartOf="@+id/clearTv"
+                    android:maxLength="20"
+                    android:maxLines="1"
+                    android:paddingStart="@dimen/spacing_standard_new"
+                    android:paddingTop="@dimen/spacing_standard"
+                    android:paddingEnd="@dimen/spacing_standard_new"
+                    android:paddingBottom="@dimen/spacing_standard"
+                    android:singleLine="true"
+                    android:text="@string/total_items"
+                    android:textColor="@color/textColorPrimary"
+                    tools:text="مجموع العناصر (2)"
+                    tools:visibility="visible" />
+
+                <TextView
+                    android:id="@+id/clearTv"
+                    style="@style/Heading"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginEnd="@dimen/spacing_standard_new"
+                    android:background="@drawable/bg_rectangle_order"
+                    android:maxLength="11"
+                    android:maxLines="1"
+                    android:paddingStart="@dimen/spacing_middle"
+                    android:paddingTop="@dimen/_6sdp"
+                    android:paddingEnd="@dimen/spacing_middle"
+                    android:paddingBottom="@dimen/_6sdp"
+                    android:singleLine="true"
+                    android:text="@string/clear_cart"
+                    android:textColor="@color/red"
+                    android:textStyle="bold"
+                    tools:visibility="visible" />
+
+            </RelativeLayout>
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/recyclerView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                style="@style/RecycleView"
+                tools:listitem="@layout/item_cart" />
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/createOrder"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_16sdp"
+                android:layout_marginEnd="@dimen/_16sdp"
+                android:text="انشاء طلبك"
+                android:theme="@style/BaseTheme"
+                app:cornerRadius="@dimen/_6sdp" />
+
+
+            <include
+                android:id="@+id/no_data"
+                layout="@layout/layout_no_data"
+                android:visibility="visible" />
+
+        </LinearLayout>
+
+    </ScrollView>
+
+
+</androidx.swiperefreshlayout.widget.SwipeRefreshLayout>
